@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "d669f2a6-cfea-4268-a83d-de589864798c",
+		"name": "RatingEnginePostmanAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post - PostPremiumCalculation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"state\": \"TX\",\r\n    \"business\": \"Plumber\",\r\n    \"revenue\": 6000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Premium/CalculatePremium",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Premium",
+						"CalculatePremium"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
